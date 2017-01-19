@@ -1,11 +1,10 @@
 
-# User
+# ConfigurationState
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**username** | **String** |  | 
-**password** | **String** |  | 
+**state** | **Boolean** |  | 
 
 
 

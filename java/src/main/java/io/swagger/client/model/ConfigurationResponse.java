@@ -6,50 +6,50 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * User
+ * ConfigurationResponse
  */
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-01-19T02:20:42.654Z")
-public class User {
-  @SerializedName("username")
-  private String username = null;
+public class ConfigurationResponse {
+  @SerializedName("code")
+  private Integer code = null;
 
-  @SerializedName("password")
-  private String password = null;
+  @SerializedName("message")
+  private String message = null;
 
-  public User username(String username) {
-    this.username = username;
+  public ConfigurationResponse code(Integer code) {
+    this.code = code;
     return this;
   }
 
    /**
-   * Get username
-   * @return username
+   * Get code
+   * @return code
   **/
   @ApiModelProperty(example = "null", required = true, value = "")
-  public String getUsername() {
-    return username;
+  public Integer getCode() {
+    return code;
   }
 
-  public void setUsername(String username) {
-    this.username = username;
+  public void setCode(Integer code) {
+    this.code = code;
   }
 
-  public User password(String password) {
-    this.password = password;
+  public ConfigurationResponse message(String message) {
+    this.message = message;
     return this;
   }
 
    /**
-   * Get password
-   * @return password
+   * Get message
+   * @return message
   **/
   @ApiModelProperty(example = "null", required = true, value = "")
-  public String getPassword() {
-    return password;
+  public String getMessage() {
+    return message;
   }
 
-  public void setPassword(String password) {
-    this.password = password;
+  public void setMessage(String message) {
+    this.message = message;
   }
 
 
@@ -61,24 +61,24 @@ public class User {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    User user = (User) o;
-    return Objects.equals(this.username, user.username) &&
-        Objects.equals(this.password, user.password);
+    ConfigurationResponse configurationResponse = (ConfigurationResponse) o;
+    return Objects.equals(this.code, configurationResponse.code) &&
+        Objects.equals(this.message, configurationResponse.message);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(username, password);
+    return Objects.hash(code, message);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class User {\n");
+    sb.append("class ConfigurationResponse {\n");
     
-    sb.append("    username: ").append(toIndentedString(username)).append("\n");
-    sb.append("    password: ").append(toIndentedString(password)).append("\n");
+    sb.append("    code: ").append(toIndentedString(code)).append("\n");
+    sb.append("    message: ").append(toIndentedString(message)).append("\n");
     sb.append("}");
     return sb.toString();
   }

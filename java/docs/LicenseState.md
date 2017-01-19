@@ -1,11 +1,10 @@
 
-# User
+# LicenseState
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**username** | **String** |  | 
-**password** | **String** |  | 
+**isActive** | **Boolean** |  | 
 
 
 

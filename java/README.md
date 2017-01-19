@@ -61,26 +61,21 @@ Please follow the [installation](#installation) instruction and execute the foll
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
 import io.swagger.client.model.*;
-import io.swagger.client.api.PetApi;
+import io.swagger.client.api.ConfigurationApi;
 
 import java.io.File;
 import java.util.*;
 
-public class PetApiExample {
+public class ConfigurationApiExample {
 
     public static void main(String[] args) {
-        ApiClient defaultClient = Configuration.getDefaultApiClient();
         
-        // Configure OAuth2 access token for authorization: petstore_auth
-        OAuth petstore_auth = (OAuth) defaultClient.getAuthentication("petstore_auth");
-        petstore_auth.setAccessToken("YOUR ACCESS TOKEN");
-
-        PetApi apiInstance = new PetApi();
-        Pet body = new Pet(); // Pet | Pet object that needs to be added to the store
+        ConfigurationApi apiInstance = new ConfigurationApi();
         try {
-            apiInstance.addPet(body);
+            Object result = apiInstance.getConfigurationSchema();
+            System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling PetApi#addPet");
+            System.err.println("Exception when calling ConfigurationApi#getConfigurationSchema");
             e.printStackTrace();
         }
     }
@@ -90,65 +85,48 @@ public class PetApiExample {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://dev-virtserver.swaggerhub.com/hugomario/template-api/1.0.0*
+All URIs are relative to *http://localhost/v1.0.0*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*PetApi* | [**addPet**](docs/PetApi.md#addPet) | **POST** /pet | Add a new pet to the store
-*PetApi* | [**deletePet**](docs/PetApi.md#deletePet) | **DELETE** /pet/{petId} | Deletes a pet
-*PetApi* | [**findPetsByStatus**](docs/PetApi.md#findPetsByStatus) | **GET** /pet/findByStatus | Finds Pets by status
-*PetApi* | [**findPetsByTags**](docs/PetApi.md#findPetsByTags) | **GET** /pet/findByTags | Finds Pets by tags
-*PetApi* | [**getPetById**](docs/PetApi.md#getPetById) | **GET** /pet/{petId} | Find pet by ID
-*PetApi* | [**updatePet**](docs/PetApi.md#updatePet) | **PUT** /pet | Update an existing pet
-*PetApi* | [**updatePetWithForm**](docs/PetApi.md#updatePetWithForm) | **POST** /pet/{petId} | Updates a pet in the store with form data
-*PetApi* | [**uploadFile**](docs/PetApi.md#uploadFile) | **POST** /pet/{petId}/uploadImage | uploads an image
-*StoreApi* | [**deleteOrder**](docs/StoreApi.md#deleteOrder) | **DELETE** /store/order/{orderId} | Delete purchase order by ID
-*StoreApi* | [**getInventory**](docs/StoreApi.md#getInventory) | **GET** /store/inventory | Returns pet inventories by status
-*StoreApi* | [**getOrderById**](docs/StoreApi.md#getOrderById) | **GET** /store/order/{orderId} | Find purchase order by ID
-*StoreApi* | [**placeOrder**](docs/StoreApi.md#placeOrder) | **POST** /store/order | Place an order for a pet
-*UserApi* | [**createUser**](docs/UserApi.md#createUser) | **POST** /user | Create user
-*UserApi* | [**createUsersWithListInput**](docs/UserApi.md#createUsersWithListInput) | **POST** /user/createWithList | Creates list of users with given input array
-*UserApi* | [**deleteUser**](docs/UserApi.md#deleteUser) | **DELETE** /user/{username} | Delete user
-*UserApi* | [**getUserByName**](docs/UserApi.md#getUserByName) | **GET** /user/{username} | Get user by user name
-*UserApi* | [**loginUser**](docs/UserApi.md#loginUser) | **GET** /user/login | Logs user into the system
-*UserApi* | [**logoutUser**](docs/UserApi.md#logoutUser) | **GET** /user/logout | Logs out current logged in user session
-*UserApi* | [**updateUser**](docs/UserApi.md#updateUser) | **PUT** /user/{username} | Updated user
+*ConfigurationApi* | [**getConfigurationSchema**](docs/ConfigurationApi.md#getConfigurationSchema) | **GET** /configuration/definition | 
+*ConfigurationApi* | [**getConfigurationValues**](docs/ConfigurationApi.md#getConfigurationValues) | **GET** /configuration | 
+*ConfigurationApi* | [**hasAdminAccount**](docs/ConfigurationApi.md#hasAdminAccount) | **GET** /configuration/hasAdminAccount | 
+*ConfigurationApi* | [**isConfigured**](docs/ConfigurationApi.md#isConfigured) | **GET** /configuration/isConfigured | 
+*ConfigurationApi* | [**setConfiguration**](docs/ConfigurationApi.md#setConfiguration) | **PUT** /configuration | 
+*LicenseApi* | [**activateLicense**](docs/LicenseApi.md#activateLicense) | **POST** /license/activate | 
+*LicenseApi* | [**activationCode**](docs/LicenseApi.md#activationCode) | **PUT** /license/activate | 
+*LicenseApi* | [**getActivationConfiguration**](docs/LicenseApi.md#getActivationConfiguration) | **GET** /license/activate | 
+*LicenseApi* | [**isLicensed**](docs/LicenseApi.md#isLicensed) | **POST** /license/state | 
+*LicenseApi* | [**uploadLicense**](docs/LicenseApi.md#uploadLicense) | **POST** /license | 
+*LoginApi* | [**login**](docs/LoginApi.md#login) | **POST** /login | verify user credentials
+*LogsApi* | [**downloadLogs**](docs/LogsApi.md#downloadLogs) | **GET** /logs | Downloads logs files
+*SetupApi* | [**checkSystemRequirements**](docs/SetupApi.md#checkSystemRequirements) | **GET** /systemRequirements | 
+*SetupApi* | [**getInstallationState**](docs/SetupApi.md#getInstallationState) | **GET** /installationState | Returns the overall status of mandatory installation steps
 
 
 ## Documentation for Models
 
- - [Category](docs/Category.md)
- - [ModelApiResponse](docs/ModelApiResponse.md)
- - [Order](docs/Order.md)
- - [Pet](docs/Pet.md)
- - [Tag](docs/Tag.md)
+ - [ActivationRequest](docs/ActivationRequest.md)
+ - [ActivationResponse](docs/ActivationResponse.md)
+ - [ConfigurationResponse](docs/ConfigurationResponse.md)
+ - [ConfigurationState](docs/ConfigurationState.md)
+ - [InstallationStatus](docs/InstallationStatus.md)
+ - [LicenseState](docs/LicenseState.md)
+ - [SystemRequirementsCheckResult](docs/SystemRequirementsCheckResult.md)
  - [User](docs/User.md)
 
 
 ## Documentation for Authorization
 
+All endpoints do not require authorization.
 Authentication schemes defined for the API:
-### petstore_auth
-
-- **Type**: OAuth
-- **Flow**: implicit
-- **Authorizatoin URL**: http://petstore.swagger.io/oauth/dialog
-- **Scopes**: 
-  - write:pets: modify pets in your account
-  - read:pets: read your pets
-
-### api_key
-
-- **Type**: API key
-- **API key parameter name**: api_key
-- **Location**: HTTP header
-
 
 ## Recommendation
 
-It's recommended to create an instance of `ApiClient` per thread in a multithreaded environment to avoid any potential issue.
+It's recommended to create an instance of `ApiClient` per thread in a multithreaded environment to avoid any potential issues.
 
 ## Author
 
-apiteam@swagger.io
+
 

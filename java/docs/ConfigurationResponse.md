@@ -1,11 +1,11 @@
 
-# User
+# ConfigurationResponse
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**username** | **String** |  | 
-**password** | **String** |  | 
+**code** | **Integer** |  | 
+**message** | **String** |  | 
 
 
 
