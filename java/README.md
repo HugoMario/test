@@ -102,7 +102,7 @@ Class | Method | HTTP request | Description
 *LoginApi* | [**login**](docs/LoginApi.md#login) | **POST** /login | verify user credentials
 *LogsApi* | [**downloadLogs**](docs/LogsApi.md#downloadLogs) | **GET** /logs | Downloads logs files
 *SetupApi* | [**checkSystemRequirements**](docs/SetupApi.md#checkSystemRequirements) | **GET** /systemRequirements | 
-*SetupApi* | [**getInstallationState**](docs/SetupApi.md#getInstallationState) | **GET** /installationState | Returns the overall status of mandatory installation steps
+*SetupApi* | [**getInstallationState**](docs/SetupApi.md#getInstallationState) | **GET** /installationState | Returns the overall status of mandatory installation steps.
 
 
 ## Documentation for Models
@@ -112,7 +112,9 @@ Class | Method | HTTP request | Description
  - [ConfigurationResponse](docs/ConfigurationResponse.md)
  - [ConfigurationState](docs/ConfigurationState.md)
  - [InstallationStatus](docs/InstallationStatus.md)
+ - [InventoryItem](docs/InventoryItem.md)
  - [LicenseState](docs/LicenseState.md)
+ - [Manufacturer](docs/Manufacturer.md)
  - [SystemRequirementsCheckResult](docs/SystemRequirementsCheckResult.md)
  - [User](docs/User.md)
 

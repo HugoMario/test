@@ -5,7 +5,7 @@ All URIs are relative to *http://localhost/v1.0.0*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**checkSystemRequirements**](SetupApi.md#checkSystemRequirements) | **GET** /systemRequirements | 
-[**getInstallationState**](SetupApi.md#getInstallationState) | **GET** /installationState | Returns the overall status of mandatory installation steps
+[**getInstallationState**](SetupApi.md#getInstallationState) | **GET** /installationState | Returns the overall status of mandatory installation steps.
 
 
 <a name="checkSystemRequirements"></a>
@@ -53,7 +53,7 @@ No authorization required
 # **getInstallationState**
 > InstallationStatus getInstallationState()
 
-Returns the overall status of mandatory installation steps
+Returns the overall status of mandatory installation steps.
 
 ### Example
 ```java

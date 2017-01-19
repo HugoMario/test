@@ -184,7 +184,7 @@ public class SetupApi {
     }
 
     /**
-     * Returns the overall status of mandatory installation steps
+     * Returns the overall status of mandatory installation steps.
      * 
      * @return InstallationStatus
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -195,7 +195,7 @@ public class SetupApi {
     }
 
     /**
-     * Returns the overall status of mandatory installation steps
+     * Returns the overall status of mandatory installation steps.
      * 
      * @return ApiResponse&lt;InstallationStatus&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -207,7 +207,7 @@ public class SetupApi {
     }
 
     /**
-     * Returns the overall status of mandatory installation steps (asynchronously)
+     * Returns the overall status of mandatory installation steps. (asynchronously)
      * 
      * @param callback The callback to be executed when the API call finishes
      * @return The request call

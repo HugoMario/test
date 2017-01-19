@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * SystemRequirementsCheckResult
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-01-19T02:20:42.654Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-01-19T04:26:49.011Z")
 public class SystemRequirementsCheckResult {
   @SerializedName("meetsCriteria")
   private Boolean meetsCriteria = null;

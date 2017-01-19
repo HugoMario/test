@@ -34,7 +34,7 @@ public class SetupApiTest {
     }
     
     /**
-     * Returns the overall status of mandatory installation steps
+     * Returns the overall status of mandatory installation steps.
      *
      * 
      *
