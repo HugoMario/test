@@ -9,7 +9,7 @@ import io.swagger.client.model.Manufacturer;
 /**
  * InventoryItem
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-01-21T20:21:15.394Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-01-22T22:01:23.514Z")
 public class InventoryItem {
   @SerializedName("id")
   private String id = null;

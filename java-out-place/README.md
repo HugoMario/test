@@ -102,7 +102,7 @@ Class | Method | HTTP request | Description
 ## Documentation for Authorization
 
 Authentication schemes defined for the API:
-### basicAuth
+### noPasa
 
 - **Type**: HTTP basic authentication
 
