@@ -8,7 +8,7 @@
       "email" : "you@your-company.com"
     },
     "license" : {
-      "name" : "Apache 2.0",
+      "name" : "Apache 2.0.1",
       "url" : "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
