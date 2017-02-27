@@ -1,7 +1,7 @@
 ---
 swagger: "2.0"
 info:
-  description: "This is an API for a football tournament."
+  description: "This is an API for a football tournament"
   version: "1.0.0"
   title: "Soccer Tournament API"
   contact:
