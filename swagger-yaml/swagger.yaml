@@ -1,7 +1,7 @@
 ---
 swagger: "2.0"
 info:
-  description: "This is an API for a soccer tournament"
+  description: "This is an API for a football tournament."
   version: "1.0.0"
   title: "Soccer Tournament API"
   contact:
@@ -10,7 +10,7 @@ info:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
 host: "dev-virtserver.swaggerhub.com"
-basePath: "/hugomario/newone/1.0.0"
+basePath: "/hugom/newone/1.0.0"
 tags:
 - name: "admins"
   description: "Secured Admin-only calls"
