@@ -26,7 +26,7 @@ paths:
       summary: "get a team"
       description: "By passing in the appropriate options, you can search for\navailable\
         \ teams in the system\n"
-      operationId: "getTeam"
+      operationId: "getTeam2"
       produces:
       - "application/json"
       parameters:
@@ -40,15 +40,15 @@ paths:
         description: "number of records to skip for pagination"
         required: false
         type: "integer"
-        minimum: 0.0
+        minimum: 0
         format: "int32"
       - name: "limit"
         in: "query"
         description: "maximum number of records to return"
         required: false
         type: "integer"
-        maximum: 50.0
-        minimum: 0.0
+        maximum: 50
+        minimum: 0
         format: "int32"
       responses:
         200:
